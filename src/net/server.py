@@ -10,6 +10,7 @@ from etc import myexp3
 from etc import mythompson
 from etc import myucb
 from etc import myklucb
+from etc import myepsilon
 
 
 class myServer:
@@ -25,7 +26,9 @@ class myServer:
 
 		if self.params.algo   == "Random":
 			self.model = myrandom.Random(self.params)
-		if self.params.algo   == "ANN":
+		elif self.params.algo == "EPS":
+			self.model = myepsilon.EpsilonGreedy(self.params)
+		elif self.params.algo   == "ANN":
 			self.model = myann.ANN(self.params)
 		elif self.params.algo == "Q-learning":
 			self.model = myqlearning.Qlearning(self.params)

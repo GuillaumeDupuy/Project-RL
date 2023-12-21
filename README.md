@@ -33,17 +33,18 @@ pip install -r requirements.txt
 
 ### Execution
 
-1. To launch the dashboard, you have to run the following command :
+To execute the code, follow these steps :
+
+1. Go to the `src/` folder :
 
 ```bash
-streamlit run app/dashboard.py
+cd src
 ```
 
-or 
+2. Run the main file :
 
 ```bash
-cd app
-streamlit run dashboard.py
+python main.py
 ```
 
 ## Architecture of the project

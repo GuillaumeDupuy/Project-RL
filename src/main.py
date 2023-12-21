@@ -24,7 +24,7 @@ params.Lpld0 = 95.0038
 params.GL = 0
 params.distribution  = [0.1, 0.2, 0.2, 0.2, 0.2, 0.1]
 
-params.algo = "Q-learning" #, "markov", "exp3", "random", "bayesUCB", "thompson", "UCB", "klUCB"])
+params.algo = "Thompson" #, "ANN", "PolicyIteration", "EXP3", "UCB", "Q-learning", "klUCB", "Random", "EPS"
 params.nrBS = 1
 params.nrED = 100
 params.ps  = 10
